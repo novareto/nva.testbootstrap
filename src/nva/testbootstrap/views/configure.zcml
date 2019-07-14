@@ -7,6 +7,14 @@
   -*- extra stuff goes here -*-
 
   <browser:page
+     name="bootstrap-form"
+     for="Products.CMFCore.interfaces.IFolderish"
+     class=".bootstrap_form.BootstrapForm"
+     template="bootstrap-form.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
      name="bootstrap-components"
      for="Products.CMFCore.interfaces.IFolderish"
      class=".bootstrap_components.BootstrapComponents"
