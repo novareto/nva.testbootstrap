@@ -15,22 +15,23 @@
           <div class="row">
             <div class="col-xs-12">
               <h1>Überschriften und Abschnitte</h1>
-              <hr>
               <h1>Überschrift 1</h1>
-              <h2>Überschrift 1</h2>
-              <h3>Überschrift 1</h3>
-              <h4>Überschrift 1</h4>
-              <h5>Überschrift 1</h5>
-              <h6>Überschrift 1</h6>
+              <h2>Überschrift 2</h2>
+              <h3>Überschrift 3</h3>
+              <h4>Überschrift 4</h4>
+              <h5>Überschrift 5</h5>
+              <h6>Überschrift 6</h6>
 
               <p>Das ist eine normale Textzeile</p>
             </div>
           </div>
 
+          <hr>
+          <hr>
+
           <div class="row">
             <div class="col-xs-12">
               <h1>Listen</h1>
-              <hr>
 		<ul>
 		  <li>Lorem ipsum dolor sit amet</li>
 		  <li>Consectetur adipiscing elit</li>
@@ -59,6 +60,132 @@
 		  <li>Aenean sit amet erat nunc</li>
 		  <li>Eget porttitor lorem</li>
 		</ol>
+
+		  <dl>
+		    <dt>Description lists</dt>
+		    <dd>A description list is perfect for defining terms.</dd>
+		    <dt>Euismod</dt>
+		    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.</dd>
+		    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+		    <dt>Malesuada porta</dt>
+		    <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+		  </dl>
+            </div>
+          </div>
+        
+          <hr>
+          <hr>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>Tabellen<h2>
+              <h2>Tabelle ohne Formatierung</h2>
+
+		  <table class="table">
+		    <caption>
+		      This is an example table, and this is its caption to describe the contents.
+		    </caption>
+		    <thead>
+		      <tr>
+			<th>Table heading</th>
+			<th>Table heading</th>
+			<th>Table heading</th>
+			<th>Table heading</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+			<td>Table cell</td>
+			<td>Table cell</td>
+			<td>Table cell</td>
+			<td>Table cell</td>
+		      </tr>
+		      <tr>
+			<td>Table cell</td>
+			<td>Table cell</td>
+			<td>Table cell</td>
+			<td>Table cell</td>
+		      </tr>
+		      <tr>
+			<td>Table cell</td>
+			<td>Table cell</td>
+			<td>Table cell</td>
+			<td>Table cell</td>
+		      </tr>
+		    </tbody>
+		  </table>
+          
+               <h2>Tabelle mit Zebrastreifen</h2>
+
+                  <table class="table table-striped">
+                    <caption>
+                      This is an example table, and this is its caption to describe the contents.
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th>Table heading</th>
+                        <th>Table heading</th>
+                        <th>Table heading</th>
+                        <th>Table heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                      </tr>
+                      <tr>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                      </tr>
+                      <tr>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+         
+               <h2>Tabelle mit Linien</h2>
+
+                  <table class="table table-bordered">
+                    <caption>
+                      This is an example table, and this is its caption to describe the contents.
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th>Table heading</th>
+                        <th>Table heading</th>
+                        <th>Table heading</th>
+                        <th>Table heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                      </tr>
+                      <tr>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                      </tr>
+                      <tr>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
           </div>
 
