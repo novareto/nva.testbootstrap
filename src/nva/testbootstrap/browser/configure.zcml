@@ -18,4 +18,8 @@
       directory="static"
       />
 
+  <browser:resourceDirectory
+      name="nva.testbootstrap"
+      directory="static" />
+
 </configure>

@@ -2,9 +2,14 @@
 
 from nva.testbootstrap import _
 from Products.Five.browser import BrowserView
+from plone import api as ploneapi
 
 # from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 
 class BootstrapContent(BrowserView):
     """Test the Bootstrap Content Section"""
+
+    def static(self):
+        portal = ploneapi.portal.get().absolute_url()
+        return portal + '/++resource++nva.testbootstrap'
