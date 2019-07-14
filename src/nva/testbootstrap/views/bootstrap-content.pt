@@ -1,13 +1,69 @@
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:metal="http://xml.zope.org/namespaces/metal"
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      i18n:domain="nva.testbootstrap"
-      metal:use-macro="context/main_template/macros/master">
-<body>
-  <metal:block fill-slot="content-core">
-      <h2 i18n:translate="">Sample View</h2>
-      <p tal:content="view/msg">this gets replaced</p>
-  </metal:block>
-<body>
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="nva.testbootstrap">
+
+  <body>
+
+    <metal:main fill-slot="main">
+      <tal:main-macro metal:define-macro="main">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>Überschriften und Abschnitte</h1>
+              <hr>
+              <h1>Überschrift 1</h1>
+              <h2>Überschrift 1</h2>
+              <h3>Überschrift 1</h3>
+              <h4>Überschrift 1</h4>
+              <h5>Überschrift 1</h5>
+              <h6>Überschrift 1</h6>
+
+              <p>Das ist eine normale Textzeile</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>Listen</h1>
+              <hr>
+		<ul>
+		  <li>Lorem ipsum dolor sit amet</li>
+		  <li>Consectetur adipiscing elit</li>
+		  <li>Integer molestie lorem at massa</li>
+		  <li>Facilisis in pretium nisl aliquet</li>
+		  <li>Nulla volutpat aliquam velit
+		    <ul>
+		      <li>Phasellus iaculis neque</li>
+		      <li>Purus sodales ultricies</li>
+		      <li>Vestibulum laoreet porttitor sem</li>
+		      <li>Ac tristique libero volutpat at</li>
+		    </ul>
+		  </li>
+		  <li>Faucibus porta lacus fringilla vel</li>
+		  <li>Aenean sit amet erat nunc</li>
+		  <li>Eget porttitor lorem</li>
+		</ul>
+
+		<ol>
+		  <li>Lorem ipsum dolor sit amet</li>
+		  <li>Consectetur adipiscing elit</li>
+		  <li>Integer molestie lorem at massa</li>
+		  <li>Facilisis in pretium nisl aliquet</li>
+		  <li>Nulla volutpat aliquam velit</li>
+		  <li>Faucibus porta lacus fringilla vel</li>
+		  <li>Aenean sit amet erat nunc</li>
+		  <li>Eget porttitor lorem</li>
+		</ol>
+            </div>
+          </div>
+
+        </div> <!--Container-->
+      </tal:main-macro>
+    </metal:main>
+  </body>
 </html>
