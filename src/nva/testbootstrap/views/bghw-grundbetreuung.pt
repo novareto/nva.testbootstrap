@@ -1,0 +1,175 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="nva.testbootstrap">
+
+  <body>
+
+    <metal:main fill-slot="main">
+      <tal:main-macro metal:define-macro="main">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>Grundbetreuung</h1>
+
+		<form>
+		<h3>Betrieb der BGHW</h3>
+		<fieldset class="form-group">
+		<div class="row">
+		<legend class="col-form-label col-sm-2 pt-0">Bitte auswählen</legend>
+		<div class="col-sm-10">
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+		  <label class="form-check-label" for="gridRadios1">
+		    Betriebe des Einzelhandels, außer Motorradhandel.
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+		  <label class="form-check-label" for="gridRadios2">
+		    Betriebe des Großhandels, außer Recyclingunternehmen.
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+		  <label class="form-check-label" for="gridRadios3">
+		    Verkehr und Lagerei, Behandlung, Beseitigung von Abfällen, Rückgewinnung
+		  </label>
+		</div>
+		</div>
+		</div>
+		</fieldset>
+
+		<h3>Eingabe eines vorhandenen WZ-Codes"</h3>
+		<div class="form-group row">
+		<label for="WZ-Code1" class="col-sm-2 col-form-label">WZ-Code Eingabe</label>
+		<div class="col-sm-4 input-group mb-5">
+		<input type="text" name="wz-code" class="form-control" id="WZ-Code1">
+		<input type="text" name="wz-code1" aria-label="First name" class="form-control">
+		<input type="text" name="wz-code2" zaria-label="Last name" class="form-control" aria-describedby="button-addon2">
+		<div class="input-group-append">
+		<input type="submit" class="btn btn-outline-secondary" id="button-addon2" value="Suchen">
+		</div>
+		</div>
+		</div>
+		<h3>Suche nach einem WZ-Code"</h3>
+		<div class="form-group row">
+		<label for="WZ-Code1" class="col-sm-2 col-form-label">Suchbegriff</label>
+		<div class="col-sm-10 input-group mb-3">
+		<input type="text" name="suchbegriff" class="form-control" id="WZ-Code1" aria-describedby="button-addon2">
+		<div class="input-group-append">
+		<input type="submit" class="btn btn-outline-secondary" id="button-addon2" value="Suchen">
+		</div>
+		</div>
+		</div>
+
+		<div class="form-group row">
+		<div class="col-sm-10">
+		<button type="submit" class="btn btn-primary">Absenden</button>
+		</div>
+		</div>
+		</form>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="col-sm-10">
+
+             <h1>1.1 Besondere Tätigkeiten</h1>
+
+		<button type="button" class="btn btn-success mt-3 mb-3" data-toggle="modal" data-target="#exampleModalLong">
+		  Erläuterung lesen
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLongTitle">1.1 Besondere Tätigkeiten</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		      </div>
+		      <div class="modal-body">
+		      Regelmäßig vorliegende betriebsspezifische Unfall- und Gesundheitsgefahren, Erfordernisse zur menschengerechten Arbeitsgestaltung
+		      Bitte prüfen Sie, ob mindestens eines der hier genannten Auslösekriterien auf Ihren Betrieb zutrifft: 
+		      Feuerarbeiten in brand- und explosionsgefährdeten Bereichen
+		      Gefährliche Arbeiten an unter Druck stehenden Anlagen
+		      Arbeiten in gasgefährdeten Bereichen
+		      Andere gefährliche Arbeiten (Schweißen in engen Räumen, Sprengarbeiten, Fällen von Bäumen, ...)
+		      Arbeiten unter Infektionsgefahren
+		      Umgang mit ionisierender Strahlung, Arbeiten im Bereich elektromagnetischer Felder
+		      Alleinarbeit
+		      Andere Tätigkeiten, die besondere Schutzmaßnahmen erfordern
+		      Tätigkeiten, die nicht typisch für den Wirtschaftszweig bzw. das Kerngeschäft des Betriebs sind
+		      </div>
+		      <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+             <h3>Relevanz</h3>
+             <div class="custom-control custom-switch mb-3">
+               <input type="checkbox" class="custom-control-input" id="customSwitch1">
+               <label class="custom-control-label" for="customSwitch1">Aufgabengebiet relevant</label>
+             </div>
+ 
+             </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-10">
+            <h3>Einsatzzeiten</h3>
+            <h4 class="mt-3">Fachkraft für Arbeitssicherheit</h4>
+            <input type="range" class="custom-range" min="0" max="60" step="5" id="customRange3">
+            <div class="row">
+            <div class="col-sm-1"><p class="text-left">1</p></div>
+            <div class="col-sm-5"><p class="text-right">30</p></div>
+            <div class="col-sm-6"><p class="text-right">60</p></div>
+            </div>
+
+		<div class="input-group mb-5">
+		  <div class="input-group-prepend">
+		    <span class="input-group-text">Ergebnis:</span>
+		  </div>
+		  <input type="text" class="form-control text-right" aria-label="Amount (to the nearest dollar)">
+		  <div class="input-group-append">
+		    <span class="input-group-text">Minuten pro Beschäftigtem und Jahr</span>
+		  </div>
+		</div>
+
+           <h4 class="mt-3">Betriebsarzt</h4>
+            <input type="range" class="custom-range" min="0" max="60" step="5" id="customRange3">
+            <div class="row">
+            <div class="col-sm-1"><p class="text-left">1</p></div>
+            <div class="col-sm-5"><p class="text-right">30</p></div>
+            <div class="col-sm-6"><p class="text-right">60</p></div>
+            </div>
+
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+		    <span class="input-group-text">Ergebnis:</span>
+		  </div>
+		  <input type="text" class="form-control text-right" aria-label="Amount (to the nearest dollar)">
+		  <div class="input-group-append">
+		    <span class="input-group-text">Minuten pro Beschäftigtem und Jahr</span>
+		  </div>
+		</div>
+
+          </div>
+        </div>
+
+
+
+        </div> <!--Container-->
+      </tal:main-macro>
+    </metal:main>
+  </body>
+</html>

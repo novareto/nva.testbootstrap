@@ -30,5 +30,13 @@
      permission="zope2.View"
      />
 
+  <browser:page
+     name="bghw-grundbetreuung"
+     for="Products.CMFCore.interfaces.IFolderish"
+     class=".bghw_grundbetreuung.BghwGrundbetreuung"
+     template="bghw-grundbetreuung.pt"
+     permission="zope2.View"
+     />
+
 
 </configure>
