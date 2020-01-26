@@ -11,7 +11,5 @@ class W3CView(BrowserView):
     # the configure.zcml registration of this view.
     # template = ViewPageTemplateFile('w3_c_view.pt')
 
-    def __call__(self):
-        # Implement your own actions:
-        self.msg = _(u'A small message')
-        return self.index()
+    def get_url(self):
+        return self.context.absolute_url() + '/results-view'

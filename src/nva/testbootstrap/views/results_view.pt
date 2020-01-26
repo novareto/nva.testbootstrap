@@ -1,13 +1,53 @@
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:metal="http://xml.zope.org/namespaces/metal"
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      i18n:domain="nva.testbootstrap"
-      metal:use-macro="context/main_template/macros/master">
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="example.conference">
 <body>
-  <metal:block fill-slot="content-core">
-      <h2 i18n:translate="">Sample View</h2>
-      <p tal:content="view/msg">this gets replaced</p>
-  </metal:block>
+
+<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main">
+
+   <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 i18n:translate="">Testergebnisse</h2>
+        </div>
+      </div>
+
+      <div class="row" tal:repeat="vio view/msg">
+        <div class="col-12">
+            <h3 tal:content="vio/description"></h3>
+            <p>Bewertung: <span tal:content="vio/impact"/></p>
+            <p>Mehr Information: <a href="" tal:attributes="href vio/helpUrl" target="_blank" tal:content="vio/help"/></p>
+            <h4>Fundstellen</h4>
+            <table tal:condition="vio/nodes" class="table table-bordered table-responsive">
+              <thead>
+                <th>Zusammenfassung</th>
+                <th>HTML-Ausschnitt</th>
+                <th>Ziel</th>
+                <th>Bewertung</th>
+              </thead>
+              <tbody>
+                <tr tal:repeat="node vio/nodes">
+                  <td tal:content="node/failureSummary"/>
+                  <td tal:content="node/html"/>
+                  <td><ul><li tal:repeat="entry node/target" tal:content="entry"/></ul></td>
+                  <td tal:content="node/impact"/>
+                </tr>
+              </tbody>
+            </table>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <a href="" tal:attributes="href view/backurl" class="btn btn-success" role="button" type="button">Neuer Test</a>
+        </div>
+      </div>
+    </div>
+    </tal:main-macro>
+</metal:main>
 </body>
 </html>
