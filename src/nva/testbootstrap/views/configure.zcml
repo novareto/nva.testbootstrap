@@ -7,6 +7,14 @@
   -*- extra stuff goes here -*-
 
   <browser:page
+    name="portlet-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".portlet_view.PortletView"
+    template="portlet_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
     name="results-view"
     for="Products.CMFCore.interfaces.IFolderish"
     class=".results_view.ResultsView"
