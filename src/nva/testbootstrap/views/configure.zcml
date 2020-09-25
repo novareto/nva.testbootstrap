@@ -8,7 +8,7 @@
 
   <browser:page
     name="portlet-view"
-    for="Products.CMFCore.interfaces.IFolderish"
+    for="nva.testbootstrap.content.portlet.IPortlet"
     class=".portlet_view.PortletView"
     template="portlet_view.pt"
     permission="zope2.View"
